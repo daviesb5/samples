@@ -1,0 +1,35 @@
+.house-img {
+    max-width: 1000px;
+    display: flex;
+    opacity: 0.25;
+}
+
+.banner {
+    height: 700px;
+    max-width: 1000px;
+    margin: 40px auto 40px auto;
+    background-color: #3b3b3b;
+    display: flex;
+}
+
+.title-text {
+    color: #FFF;
+    font-size: 100px;
+    margin: auto;
+    /*
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    */
+}
+
+.motto-text {
+    color: #f9f9f9;
+    font-size: 50px;
+    margin: auto;
+    /*
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    */
+}
