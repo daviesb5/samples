@@ -1,3 +1,21 @@
+/*
+BODY STYLE
+*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+/*
+SITE STYLE
+*/
+
 .house-img {
     max-width: 1000px;
     display: flex;
@@ -5,17 +23,19 @@
 }
 
 .banner {
-    height: 700px;
-    max-width: 1000px;
-    margin: 40px auto 40px auto;
+    height: 350px;
+    max-width: 1500px;
+    margin: 40px auto 0 auto;
     background-color: #3b3b3b;
+    padding: 20px 50px;
     display: flex;
 }
 
 .title-text {
     color: #FFF;
-    font-size: 100px;
+    font-size: 48px;
     margin: auto;
+    flex: 1;
     /*
     position: absolute;
     top: 50%;
@@ -23,13 +43,32 @@
     */
 }
 
+/*
 .motto-text {
     color: #f9f9f9;
     font-size: 50px;
     margin: auto;
-    /*
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    flex-basis: 40%;
     position: absolute;
     top: 50%;
     transform: translateX(-50%, -50%);
-    */
+}
+*/
+
+/*
+MOBILE
+*/
+@media (max-width: 900px){
+    .banner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-text{
+        color: #dfdfdf;
+        font-size: 30px;
+    }
 }
