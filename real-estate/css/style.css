@@ -1,0 +1,162 @@
+/*
+BODY STYLE
+*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #5f2f14;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+h2 {
+    color: #dfdfdf;
+}
+
+/*
+----------------
+Color Set #1
+----------------
+e3c4a8
+4592af
+226089
+000000
+
+----------------
+Color Set #2
+----------------
+f0ece2
+dfd3c3
+c7b198
+596e79
+
+----------------
+Color Set #3
+----------------
+5f2f14
+1297bd
+1ad7db
+f3f1f1
+
+*/
+
+/*
+SITE
+*/
+
+.house-img {
+    max-width: 1000px;
+    display: flex;
+    opacity: 0.25;
+}
+
+.banner {
+    min-height: 350px;
+    max-height: 550px;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    margin-bottom: 10px;
+    background-color: #000000;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.title-text {
+    color: #f3f1f1;
+    font-size: 48px;
+    margin: auto;
+    flex: 1;
+    /*
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    */
+}
+
+/*
+.motto-text {
+    color: #f9f9f9;
+    font-size: 50px;
+    margin: auto;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    flex-basis: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+}
+*/
+
+/*
+MAIN CONTENT
+*/
+.content-container {
+    max-width: 1400px;
+    margin: 30px auto 0 auto;
+}
+
+.content-area {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    flex-basis: 35%;
+    background-color: #f3f1f1;
+}
+
+/*
+Formatting for Links
+*/
+a {
+    text-decoration: none;   
+}
+a:link {
+    color: #226089;
+}
+a:hover{
+    color: #4592af;
+}
+a:active{
+    color: #596e79;
+}
+
+/*
+MOBILE
+*/
+@media (max-width: 900px){
+    .banner {
+        min-height: 200px;
+        max-height: 300px;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-text{
+        color: #ffffff;
+        font-size: 30px;
+    }
+    .content-container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 600px){
+    .banner {
+        max-width: 550;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-text{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .content-container {
+        min-height: 250px;
+        max-height: 300px;
+        max-width: 415px;
+    }
+}
