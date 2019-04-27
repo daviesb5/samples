@@ -47,25 +47,36 @@ f3f1f1
 SITE
 */
 
-.house-img {
-    max-width: 1000px;
-    display: flex;
-    opacity: 0.25;
-}
-
 .banner {
+    /*
+    OTHER
+    */
+    display: flex;
     min-height: 350px;
     max-height: 550px;
     max-width: 1400px;
     margin: 40px auto 0 auto;
     margin-bottom: 10px;
-    background-color: #000000;
     padding: 20px 50px;
     display: flex;
 }
 
+/*
+div.banner {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-self: center;
+    background: url("../img/full-size/sherwood.jpg");
+    opacity: 0.75;
+    max-width: 1400px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+*/
+
 .title-text {
-    color: #f3f1f1;
+    color: #fff;
     font-size: 48px;
     margin: auto;
     flex: 1;
@@ -157,6 +168,6 @@ MOBILE
     .content-container {
         min-height: 250px;
         max-height: 300px;
-        max-width: 415px;
+        max-width: 400px;
     }
 }
