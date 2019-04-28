@@ -8,7 +8,7 @@ html, body {
 
 body {
     margin: 0px;
-    background-color: #5f2f14;
+    background-color: #000;
     font-family: Raleway, Helvetica, sans-serif;
     padding-bottom: 100px;
 }
@@ -46,58 +46,41 @@ Color Set #3
 1ad7db
 f3f1f1
 
-*/
-
-/*
-SITE
-*/
-
 .banner {
-    /*
-    OTHER
-    */
     display: flex;
+    flex: 1;
+    box-sizing: border-box;
     min-height: 350px;
     max-height: 550px;
     max-width: 1400px;
-    margin: 40px auto 0 auto;
+    margin: 30px auto 0 auto;
     margin-bottom: 10px;
     padding: 20px 50px;
-    display: flex;
 }
-/*
-div.banner-img {
-    flex: 1;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    align-self: center;
-    background: url("../img/full-size/sherwood.jpg");
-    max-width: 1400px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-}
-*/
 
 #bg-img {
+    max-width: 1400px;
     background-image: url('../img/full-size/pratt-blueprint.jpg');
     background-size: cover;
     background-position: center center;
-    position: relative;
+    position: absolute;
     top: 0;
     bottom: 0;
     height: 100vh;
     z-index: -10;
+    max-height: 450px;
+    max-width: 1400px;
 }
 
 #bg-img-overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.65);
     top: 0;
     bottom: 0;
     height: 100%;
     width: 100%;
     z-index: -5;
+    max-height: 450px;
 }
 
 .title-text {
@@ -105,11 +88,37 @@ div.banner-img {
     font-size: 48px;
     margin: auto;
     flex: 1;
-    /*
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%, -50%);
-    */
+}
+*/
+
+/*
+SITE
+*/
+
+.banner {
+    flex: 1;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;
+}
+.bg-img {
+    min-height: 350px;
+    max-height: 550px;
+    background-image: url('../img/full-size/pratt-blueprint.jpg');
+
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    flex-basis: 35%;
+    font-size: 48px;
+}
+.bg-img-overlay {
+    min-height: 350px;
+    max-height: 550px;
+    flex: 1;
+    order: 2;
+    max-width: 150px;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -5;
 }
 
 /*
@@ -173,15 +182,25 @@ MOBILE
 */
 @media (max-width: 900px){
     .banner {
-        min-height: 200px;
-        max-height: 300px;
-        max-width: 800px;
+        min-height: 525px;
+        max-height: 550px;
+        max-width: 700px;
         display: flex;
         justify-content: space-between;
+        margin: 0px auto 0 auto;
+        margin-bottom: 0px;
+        padding: 0px 0px;
     }
-    .title-text{
+    .bg-img {
+        min-height: 300px;
+        max-height: 400px;
+        max-width: 700px;
         color: #ffffff;
         font-size: 30px;
+    }
+    .bg-img-overlay {
+        min-height: 300px;
+        max-height: 400px;
     }
     .content-container {
         max-width: 700px;
@@ -190,13 +209,25 @@ MOBILE
 
 @media (max-width: 600px){
     .banner {
-        max-width: 550;
-        display: flex;
-        justify-content: space-between;
+        min-height: 250px;
+        max-height: 400px;
+        min-width: 400px;
+        max-width: 450px;
+        margin: 0px auto 0 auto;
+        margin-bottom: 0px;
+        padding: 0px 0px;
     }
-    .title-text{
-        color: #ffffff;
-        font-size: 20px;
+    .bg-img {
+        min-height: 300px;
+        max-height: 400px;
+        max-width: 700px;
+        color: #444;
+        font-size: 24px;
+    }
+    .bg-img-overlay {
+        min-height: 300px;
+        max-height: 400px;
+        
     }
     .content-container {
         min-height: 250px;
