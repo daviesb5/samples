@@ -46,25 +46,43 @@ MENU
 */
 .content-container {
     display: flex;
-    flex: 3;
+    flex: 2;
     background-color: #EEE;
 }
 .top-section {
     color: #FFF;
-    background-color: #222222;
+    background-color: #333;
     padding: 20px;
     margin: -10px;
     flex-basis: 100%;
-    flex: 1;
-    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .logo {
     color: #FFF;
     background-color: #000000;
     flex: 1;
     order: 1;
-    min-width: 25px;
-    max-width: 50px;
-    min-height: 50px;
-    max-height: 75px;
+    min-width: 75px;
+    max-width: 100px;
+    min-height: 75px;
+    max-height: 100px;
+    /*
+    position: relative;
+    top: 40px;
+    */
+}
+.logo-img {
+    min-width: 75px;
+    max-width: 100px;
+    min-height: 75px;
+    max-height: 100px;
+}
+.navigation {
+    flex: 1;
+    order: 2;
+    position: relative;
+    top: 40px;
 }
