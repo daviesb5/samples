@@ -46,43 +46,87 @@ MENU
 */
 .content-container {
     display: flex;
-    flex: 2;
+    flex: 3;
     background-color: #EEE;
 }
 .top-section {
     color: #FFF;
     background-color: #333;
-    padding: 20px;
+    padding: 0px;
     margin: -10px;
     flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 80px;
+    max-height: 85px;
 }
 .logo {
-    color: #FFF;
-    background-color: #000000;
     flex: 1;
     order: 1;
-    min-width: 75px;
-    max-width: 100px;
-    min-height: 75px;
-    max-height: 100px;
-    /*
-    position: relative;
-    top: 40px;
-    */
+    min-width: 90px;
+    max-width: 95px;
+    min-height: 90px;
+    max-height: 95px;
+    position: absolute;
+    left: 30px;
 }
 .logo-img {
-    min-width: 75px;
-    max-width: 100px;
-    min-height: 75px;
-    max-height: 100px;
+    min-width: 90px;
+    max-width: 95px;
+    min-height: 90px;
+    max-height: 95px;
 }
 .navigation {
+    display: inline;
     flex: 1;
     order: 2;
-    position: relative;
-    top: 40px;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+.hamburger-menu {
+    margin: right;
+    position: right;
+    display: none;
+}
+
+/*
+MOBILE
+*/
+@media (max-width: 950px) {
+    .content-container {
+        display: flex;
+        flex: 2;
+        justify-content: space-between;
+    }
+    .logo-img {
+        flex: 1;
+        min-width: 80px;
+        max-width: 85px;
+        min-height: 80px;
+        max-height: 85px;
+    }
+    .logo {
+        min-width: 80px;
+        max-width: 85px;
+        min-height: 80px;
+        max-height: 85px; 
+    }
+    .navigation {
+        display: none;
+    }
+    .hamburger-menu {
+        flex: 1;
+        position: absolute;
+        display: inline;
+        margin-right: auto;
+    }
+    .bar-1 {
+        width: 35px;
+        height: 5px;
+        background-color: #1AA2DC;
+        margin: 6px 0;
+    }
 }
