@@ -33,11 +33,15 @@ body {
 MENU
 */
 .content-container {
+    z-index: 5;
     background-color: #222222;
     max-height: 75px;
 }
 
 .top-section {
+    /*
+    z-index: -5;
+    */
     max-width: 1200px;
     background-color: #222;
     margin: 0px auto 0 auto;
@@ -83,6 +87,32 @@ MENU
 }
 
 /*
+SLIDE-SHOW
+*/
+.slide-show-container {
+    display: flex;
+    justify-content: space-between;
+}
+.slide-show {
+    max-width: 1300px;
+    margin: 30px auto 0 auto;
+    margin: auto;
+    background-attachment: #000;
+}
+.house-img {
+    max-width: 1300px;
+    margin: auto;
+}
+.credit {
+    font-size: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 50%;
+    margin: 0px auto 0 auto;
+}
+
+/*
 MOBILE
 */
 @media (max-width: 950px) {
@@ -94,19 +124,19 @@ MOBILE
     .logo {
         flex: 1;
         order: 1;
-        min-width: 80px;
-        max-width: 85px;
-        min-height: 80px;
-        max-height: 85px;
+        min-width: 75px;
+        max-width: 80px;
+        min-height: 75px;
+        max-height: 80px;
         /*
         TEMP
         */
     }
     .logo-img {
-        min-width: 80px;
-        max-width: 85px;
-        min-height: 80px;
-        max-height: 85px; 
+        min-width: 75px;
+        max-width: 80px;
+        min-height: 75px;
+        max-height: 80px;
     }
     .navigation {
         display: none;
@@ -128,5 +158,30 @@ MOBILE
         height: 5px;
         background-color: #1AA2DC;
         margin: 6px 0;
+    }
+    /*
+    SLIDE-SHOW
+    */
+    .slide-show-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide-show {
+        max-width: 750px;
+        margin: 30px auto 0 auto;
+        margin: auto;
+        background-attachment: #000;
+    }
+    .house-img {
+        max-width: 750px;
+        margin: auto;
+    }
+    .credit {
+        font-size: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        flex-basis: 50%;
+        margin: 0px auto 0 auto;
     }
 } 
