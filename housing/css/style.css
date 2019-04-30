@@ -16,7 +16,9 @@ COLORS (HEX)
 #000000
 */
 
-
+/*
+MAIN BODY
+*/
 html, body {
     padding: 0;
     margin: 0;
@@ -32,23 +34,37 @@ MENU
 */
 .content-container {
     background-color: #222222;
+    max-height: 75px;
 }
 
 .top-section {
-    max-width: 1000px;
-    background-color: #F8E9A1;
+    max-width: 1200px;
+    background-color: #222;
     margin: 0px auto 0 auto;
     line-height: 1.65;
-    padding: 0px 50px;
+    padding: 0px 0px;
     display:flex;
+    max-height: 75px;
 }
 .logo {
     flex: 1;
     order: 1;
+    min-width: 85px;
+    max-width: 90px;
+    min-height: 85px;
+    max-height: 90px;
+}
+.logo-img {
+    min-width: 85px;
+    max-width: 90px;
+    min-height: 85px;
+    max-height: 90px;
 }
 .navigation {
+    display: flex;
     flex: 2;
     order: 2;
+    margin: auto;
 }
 /*
 .hamburger-menu {
@@ -57,11 +73,60 @@ MENU
 }
 */
 .nav-button {
-    top: -50px;
     background-color: ;
     border: none;
     color: #DDD;
     padding: 5px 20px;
     text-align: center;
     display: inline-flex;
+    text-decoration: none;
 }
+
+/*
+MOBILE
+*/
+@media (max-width: 950px) {
+    .content-container {
+        display: flex;
+        flex: 3;
+        justify-content: space-between;
+    }
+    .logo {
+        flex: 1;
+        order: 1;
+        min-width: 80px;
+        max-width: 85px;
+        min-height: 80px;
+        max-height: 85px;
+        /*
+        TEMP
+        */
+    }
+    .logo-img {
+        min-width: 80px;
+        max-width: 85px;
+        min-height: 80px;
+        max-height: 85px; 
+    }
+    .navigation {
+        display: none;
+    }
+    .hamburger-menu {
+        flex: 1;
+        order: 3;
+        position: absolute;
+        display: inline;
+        margin-right: auto;
+        /*
+        TEMP
+        */
+        right: 15px;
+        top: 15px;
+    }
+    .bar-1 {
+        width: 35px;
+        height: 5px;
+        background-color: #1AA2DC;
+        margin: 6px 0;
+    }
+} 
