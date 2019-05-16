@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Sample Websites</title>
 	<link rel="stylesheet" href="../css/main-style.css">
+	<link rel="stylesheet" href="../css/sample-style.css">
 </head>
 
 <body>
@@ -29,25 +30,16 @@
 	<div class="section-layout">
 		<div class="section-text">
 			<h3>
-				Samples
+				To see a site, simply click on the image:
 			</h3>
-			<p>
-				To get started, select a site:
-			</p>
-			<ul>
-				<li class="user-item">
-					<a class="user-link" href="housing/index.html">
-						Zimmermann Housing
-					</a>
-				</li>
-				<!--
-				<li class="user-item">
-					<a class="user-link" href="samples/index.html">
-						Sample Websites
-					</a>
-				</li>
-				-->
-			</ul>
+		</div>
+		<div class="grid-layout">
+			<div class="sample-cell">
+				<a href="housing/index.html">
+					<img class="flex-img-cell white-bg" src="housing/img/fs/site-logo.png" alt="Zimmermann Housing"
+						id="housing" onclick="checkImg(this.id);">
+				</a>
+			</div>
 		</div>
 	</div>
 
